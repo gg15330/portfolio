@@ -1,0 +1,85 @@
+{"title":"Animal Quiz",
+"questions":[
+  {
+  "question":"What is the best cat?",
+  "choices":[
+    {"choice":"Scottish Fold"},
+    {"choice":"Tabby"},
+    {"choice":"Bengal"},
+    {"choice":"American Shorthair"}],
+  "answer":0},
+  {
+  "question":"What is the best dog?",
+  "choices":[
+    {"choice":"Labrador"},
+    {"choice":"Beagle"},
+    {"choice":"Siberian Husky"},
+    {"choice":"Cavalier King Charles Spaniel"}],
+  "answer":2},
+  {
+  "question":"What is the best bird?",
+  "choices":[
+    {"choice":"Acorn Woodpecker"},
+    {"choice":"African Fish Eagle"},
+    {"choice":"American Oystercatcher"},
+    {"choice":"Wandering Albatross"}],
+  "answer":0},
+  {
+  "question":"What is the best hedgehog?",
+  "choices":[
+    {"choice":"Cute Hedgehog"},
+    {"choice":"Adorable Hedgehog"},
+    {"choice":"Snuggly Hedgehog"},
+    {"choice":"Japanese Fighting Hog"}],
+  "answer":3},
+  {
+  "question":"What is the best sheep?",
+  "choices":[
+    {"choice":"Askanian"},
+    {"choice":"Badger Face Welsh Mountain"},
+    {"choice":"Oxford Down"},
+    {"choice":"Zwartbles"}],
+  "answer":1},
+  {
+  "question":"What is the best lizard?",
+  "choices":[
+    {"choice":"Bearded Dragon"},
+    {"choice":"Cuban Rock Iguana"},
+    {"choice":"Egyptian Uromastyx"},
+    {"choice":"Frog-Eye Gecko"}],
+  "answer":2},
+  {
+  "question":"What is the best horse?",
+  "choices":[
+    {"choice":"Russian Trotter"},
+    {"choice":"Shetland Pony"},
+    {"choice":"American Quarter Horse"},
+    {"choice":"Estonian Draft"}],
+  "answer":2},
+  {
+  "question":"What is the best goat?",
+  "choices":[
+    {"choice":"Hexi Cashmere"},
+    {"choice":"Huaitoutala"},
+    {"choice":"Angora"},
+    {"choice":"Finnish Landrace"}],
+  "answer":0},
+  {
+  "question":"What is the best spider?",
+  "choices":[
+    {"choice":"Big Spider"},
+    {"choice":"Bigger Spider"},
+    {"choice":"Australian Nope Spider"},
+    {"choice":"Massive Jumpy Bitey Poisonspider"}
+  ],
+  "answer":2},
+  {
+  "question":"What is the best rabbit?",
+  "choices":[
+    {"choice":"Argente Creme"},
+    {"choice":"Blanc de Termonde"},
+    {"choice":"British Giant"},
+    {"choice":"Caldes"}
+  ],
+  "answer":3}]
+}

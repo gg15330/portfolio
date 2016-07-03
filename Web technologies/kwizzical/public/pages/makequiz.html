@@ -1,0 +1,77 @@
+<!-- Page which displays the form so that a user can create a quiz -->
+<!-- The form controller then creates a JSON object to post to database -->
+<div data-ng-controller="formCtrl"
+  class="container"
+  id="quiz">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1 id="create-quiz-title">Create a Kwiz</h1>
+        <h3 class="col-sm-12 text-center">Enter questions and answers to create your own quiz. How exciting!</h3>
+      </div>
+    </div>
+    <!--form-->
+    <form class="form-horizontal"
+      data-ng-submit="formSubmit()">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <!--Title-->
+          <div class="form-group">
+            <label class="control-label text-center"
+            for="title">Kwiz Title:</label>
+            <input type="text"
+            id="title"
+            data-ng-model="formquiz.title"
+            class="form-control"
+            placeholder="What would you like to call your quiz?"/>
+          </div>
+          <!--question-->
+          <div class="form-group">
+            <label class="control-label text-center"
+            for="question">Question:</label>
+            <input type="text"
+            id="question"
+            data-ng-model="formquestion.question"
+            class="form-control"
+            placeholder="Enter your question here"/>
+          </div>
+          <!--choices-->
+          <div class="form-group" data-ng-repeat="c in formquestion.choices track by $index">
+            <label class="control-label text-center"
+              for="choice">Answer <span data-ng-bind="$index + 1"></span>:</label>
+              <input type="text"
+              id="choice"
+              data-ng-model="formquestion.choices[$index].choice"
+              class="form-control"
+              placeholder="Enter your answer here" />
+            </div>
+            <!--radio button-->
+            <div class="form-group radio">
+              <fieldset>
+                <legend>Correct answer:</legend>
+                <label class="radio-inline"><input type="radio" name="correct" data-ng-model="formquestion.answer" data-ng-value="0" checked="checked" />1</label>
+                <label class="radio-inline"><input type="radio" name="correct" data-ng-model="formquestion.answer" data-ng-value="1" checked="checked" />2</label>
+                <label class="radio-inline"><input type="radio" name="correct" data-ng-model="formquestion.answer" data-ng-value="2" checked="checked" />3</label>
+                <label class="radio-inline"><input type="radio" name="correct" data-ng-model="formquestion.answer" data-ng-value="3" checked="checked" />4</label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <!-- buttons -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 text-right">
+              <input type ="button" class="btn btn-primary form-button"
+              data-ng-click="addQuestion()"
+              value="Add Question" />
+            </div>
+            <div class="col-xs-6 text-left">
+              <input type="submit"
+              class="btn btn-success form-button"
+              value="Done" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+<!-- Page which displays a button for each quiz stored in
+the database -->
+<div data-ng-controller="qlCtrl" class="container">
+  <div class="col-sm-12 text-center">
+    <!-- If there are no quizzes in the database the text will tell
+    the user to create one -->
+    <h2 data-ng-bind="msg" class="text-center quizzes-heading"></h2>
+  </div>
+  <!-- Create button with the link asscoiated with each refing to the ID of
+  the quiz in the database -->
+  <div class="col-sm-3" data-ng-repeat="quiz in quizlist">
+    <a
+      data-ng-href="/#/takequiz/{{quiz.id}}"
+      data-ng-click="getQuiz(quiz.id)"
+      class="quiz-list-button btn btn-block"
+      data-ng-bind="quiz.title"></a>
+  </div>
+</div>

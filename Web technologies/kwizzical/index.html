@@ -1,0 +1,34 @@
+<!-- -Root page into which all content is injected -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB" data-ng-app="kwizecalApp">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/journal/bootstrap.min.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'/>
+    <link href="public/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="/public/img/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="/public/img/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="/public/img/favicon-16x16.png" sizes="16x16"/>
+    <link rel="shortcut icon" href="/public/img/favicon.ico"/>
+    <title>Kwizzical - Home</title>
+    <!--load angular - better to do this in the head -
+    calls to angular.module can only be compiled after the library has been loaded-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  </head>
+  <body>
+    <span data-header="header"></span>
+    <div data-ng-view="data-ng-view"></div>
+    <span data-footer="footer"></span>
+    <!--load bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--load page script-->
+    <script src="public/js/animation.js"></script>
+    <script src="public/js/takequiz.js"></script>
+    <script src="public/js/makequiz.js"></script>
+    <script src="public/js/quizzes.js"></script>
+    <script src="public/js/kwizecal.js"></script>
+  </body>
+</html>
